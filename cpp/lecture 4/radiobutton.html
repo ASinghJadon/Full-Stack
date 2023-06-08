@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+    <!-- main objective of form is to collect some data and send it to server -->
+
+     <form action="" method="post">
+
+        <!-- action attribute in form will consist a url on which the info that we collected from form will be sent -->
+
+
+        <!-- method attribute post - this request is made when we sending some data to server and want to either save or create
+                                some data around it or update an existing entry with it (not much safe\secure compare to post bcz
+                                 all data fetched will be shown on url).
+                                 
+                         get - this request is made when we want to retrieve or want some info from the server (here we 
+                               don't want server to make any changes in its database but want server to give some info).  -->
+
+       
+        <!-- Radio Button -->
+        <p>Gender</p>
+
+        <input type ="radio" Name="Gender" value="male" checked> Male <br> <!-- checked checked will have default setting-->
+        <input type ="radio" Name="Gender" Value="female"> Female <br>
+        <input type ="radio" Name="Gender" Value="non Binary"> Non Binary <br>
+        
+         <!-- checkbox -->
+        <P> Course Done </P>
+
+        <input type="checkbox" name="course" Value="C++"> C++ <br>
+        <input type="checkbox" name="course" Value="Java" checked> Java <br> 
+        <input type="checkbox" name="course" Value="c++"> web development <br>
+
+
+        <!-- Drop Down List -->
+        <p>Month</p> 
+
+        <select Name="Month_selected" multiple> <!-- multiple attribute will give option to select multiple option
+                                                    * press ctrl while slecting the option -->
+        <option>Jan</option>
+        <option selected>Feb</option>  <!-- selected checked will have default setting-->
+        <option>March</option>
+        <option>April</option>
+        </select>
+
+        <!-- For Text area like for suggestion or Experience (taking Multiple line Input) -->
+    <div>
+        <p>Share your Experience</p>
+        
+        <textarea name="Experience" rows= "5" cols = "30"></textarea>
+    </div>
+
+        <!-- Adding more buttons -->
+
+    <input type = "button" value="Button 1"> <br>
+     <!-- or -->
+    <button type="button"> Button 1 <img src="C:\Users\Hp\Downloads\wp2915388-indian-navy-ships-hd-wallpapers-1366x768.jpg" length="30" width="30"></button> <br>
+    <button type="submit" value="submit"> Submit </button> <br>
+    <button type="reset"> Reset</button>
+     <!-- both "input type" and "button type" tag work as same but only button type provide option for having a image -->
+     </form>
+
+</body>
+</html>
